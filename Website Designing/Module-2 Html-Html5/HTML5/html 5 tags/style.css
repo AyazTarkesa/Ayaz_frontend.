@@ -1,0 +1,57 @@
+button 
+{
+    height: 50px;
+    width:100px;
+    background-color:#04AA6D;
+    color:#FFFF;
+    border: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+a
+{
+ text-decoration: none;
+ color: black;
+ font-size: 20px;
+ 
+}
+ul
+{
+    list-style: none;
+    
+}
+#b2
+{
+ float: right;
+}
+#b1
+{
+    background-color: lightgray;
+    color: black;
+}
+div
+{    
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+}
+
+#b6
+{
+    float: right;
+}
+#b3
+{
+    background-color: lightgray;
+}
+#b4
+{
+    float: right;
+}
+#b5
+{
+    background-color: lightgray;
+    color: black;
+}
