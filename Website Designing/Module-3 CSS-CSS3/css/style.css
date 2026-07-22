@@ -1,0 +1,14 @@
+#header-app
+{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin: auto;
+    background-color: yellowgreen;
+}
+.logo
+{
+    width: auto;
+    height: auto;
+    font-size: 25px;
+}
