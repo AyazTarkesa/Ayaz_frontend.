@@ -1,0 +1,212 @@
+body
+{
+    background-color: #252222;
+}
+
+
+#header-app
+{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin: auto;
+    background-color: #eeaf28;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 8px;
+
+}
+.logo 
+{
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    margin-left: 3%;
+    
+}
+.logo h1
+{
+    color: white;
+    text-transform: capitalize;
+
+}
+.account 
+{
+    width: 10%;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 4%;
+}
+.account button
+{
+    width: 155px;
+    height: auto;
+    margin: auto;
+    background-color: lab(74.2% -15.81 -36.12 / 0.986);
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+#navbar-app
+{
+   width: 100%;
+   height: auto;
+   margin: auto;
+   background-color: black;
+   border-radius: 8px;
+}
+#navbar-app ul
+{
+    margin: auto;
+    margin-left: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    
+}
+#navbar-app ul li
+{
+    display: inline;
+    padding: 8px 15px;
+    text-transform: capitalize;
+
+}
+#navbar-app ul li a
+{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+#silder
+{
+    width: 50%;
+    height: 300px;
+    background:url(https://static.vecteezy.com/system/resources/thumbnails/011/697/956/small/3d-online-shopping-landscape-background-realistic-digital-marketing-on-website-and-mobile-application-vector.jpg);
+    margin:auto;
+    margin-top: 2%;
+    border-radius: 8px;
+}
+#silder h1
+{
+    width: 50%;
+    padding: 8px;
+    margin-right: 20%;
+    text-transform: capitalize;
+    color: hsl(125, 100%, 53%);
+    
+
+
+}
+#silder p
+{
+    width: 50%;
+    padding: 12px;
+    color: white;
+    font-size: 20px;
+}
+#content-app
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+.parents
+{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.child1
+{
+    width: 25%;
+    height: auto;
+    background-color: aquamarine;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 8px;
+}
+.child2
+{
+    width: 25%;
+    height: auto;
+    background-color: #43d409;
+    padding: 15px;
+    margin: 3px;
+     border-radius: 8px;
+
+}
+.child3
+{
+    width: 25%;
+    height: auto;
+    background-color: #ff0303;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 8px;
+
+}
+#footer-app
+{
+    width: 100%;
+    height: auto;
+    background-color:darkslategrey;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 4%;
+    border-radius: 8px;
+}
+.footer-txt
+{
+    width: 20%;
+ color: white;
+     text-transform: capitalize;
+
+ 
+}
+.footer-txt ul li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-txt a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.footer-txt1 input
+{
+   border-radius: 6px;
+   width: 200px;
+   height: 25px;
+   border: 0;
+
+}
+.footer-txt1 ul li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-txt1 a
+{
+    text-decoration: none;
+    color: white;
+        text-transform: capitalize;
+
+}
+.footer-txt2
+{
+    color: white;
+    text-transform: capitalize;
+    margin-top: 5%;
+
+}
+
+
+
+
