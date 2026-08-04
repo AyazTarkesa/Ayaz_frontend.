@@ -1,0 +1,93 @@
+
+.parent
+{
+    width: 100%;
+    height: 500px;
+    
+}
+.d1
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #FBC02D;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+img
+{
+    width: 30%;
+    height: 70vh;
+    margin-left: 3%;
+    margin-top: -20%;
+}
+.d3
+{
+    width: 30%;
+    height: auto;
+    margin-left: 50%;
+}
+.d3 p
+{
+   width: 550px;
+   height: auto;
+}
+.bio 
+{
+    width: 20%;
+    height: auto;
+    margin-left: 50%;
+}
+.frustractions
+{
+    width: 20%;
+    height: auto;
+}
+
+hr
+{
+    
+    border: solid black 2px;
+    margin-left:2%;
+    
+}
+.d2 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.d2 h1
+{
+    width: 30%;
+    height: 20px;
+    font-size: 50px;
+    margin-top: 17%;
+    margin-left: 8%;
+     display: flex;
+    flex-wrap: wrap;
+    
+
+}
+#detail
+{
+    width: 40%;
+    height: 200px;
+}
+#detail,h3
+{
+    width: 50%;
+    height: auto;
+    padding: 6x;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+#hr3
+{
+    width: 30%;
+    height: auto;
+}
+
