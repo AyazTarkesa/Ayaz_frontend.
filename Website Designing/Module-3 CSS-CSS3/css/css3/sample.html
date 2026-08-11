@@ -4,24 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+    body
+    {
+        padding: 0;
+        margin: 0;
+        background-color:#0e231c;
+    }
+    header
+    {
+        width: 100%;
+        height: auto;
+        margin: 8px;
+        margin-left: 4%;
+        padding: 5px;
+        color: white;
+        display:flex;
+        flex-wrap: nowrap;
+        animation: 2s backInDown alternate;
+        
+    }
+    nav
+    {
+        width: 30%;
+        height: auto;
+        margin-left: 30%;
+        padding: 4px;
+        color: white;
+        gap: 40px;
+        text-transform: capitalize;
+        display:flex;
+        flex-wrap: nowrap;         
+        
+      
+    }
+    button
+    {
+        width: 10%;
+        height: 30px;
+        margin: auto;
+        padding: 2px;
+        background-color: #0e231c;
+        color: white;
+        border:soild 0px black;
+        margin-left: -5%;
+
+    }
+    button:active
+    {
+          transform: translateY(2px);
+
+    }
+    nav h3:hover
+    {
+        font-size: 20px;
+        padding: 5px;
+        border: solid 1px white;
+        border-radius: 7px;
+        background-color: brown;
+        transition: ease 0.5s all;
+    }
+    button:active::after
+    {
+        background-color: #90EE90;
+    }
+    nav
+    {
+          transform: translateY(2px);
+    }
+    
+    .main
+    {
+        width: 100%;
+        height: auto;
+        display:flex;
+        flex-wrap: nowrap;
+        padding: 12px;
+        gap: 20px;
+        
+    }
+    section
+    {
+        width: 50%;
+        height: auto;
+        margin-left: 4%
+    }
+    section h1
+    {
+        width: 60%;
+        height: auto;
+        color: white;
+        font-size: 80px;
+    }
+    button:hover
+    {
+        background-color: white;
+        color: black;
+        border-radius:10px ;
+        transition: 0.5s;
+    }
+    section h1
+    {
+      animation:backInLeft 2s alternate;
+    }
+
+    section img
+    {
+             
+              animation:backInRight 2s alternate;
+              box-shadow: 10px 10px 5px lightslategray;
+
+    }
+    section img:hover
+    {
+        border-radius: 50px;
+        transition: 2s;
+    }
+    .detail
+    {
+        width: 40%;
+        height: 200px;
+        margin: 7px;
+        padding: 12px;
+        margin-left: 4%;
+        margin-top: -4%;
+        font-size: 20px;
+        background-color:#1b3029;
+        color: white;
+        border: 1;
+        border-radius: 7px;
+        animation: 2s backInUp alternate;
+    }
+    
+  
+</style>
 </head>
 <body>
    <header>
+    
     <H1> Digital Marketing</H1>
-    <nav cellspacing="5"  >
+    
+    <nav cellsspacing="5">
         <h3> Home </h3>
         <h3> sevivce</h3>
         <h3> about </h3>
     </nav>
     <button name="button">Login</button>
    </header>
-   <main class="app">
-     <h1 id="txt">
-         grow your business
+   <div class="main">
+   <section>
+    
+        <h1>
+            grow your business
+        </h1>
+    </section>
 
-     </h1>        
      
-   </main>
+
+    <section>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRUc_t5EJ5ZONQqY7mGS6youY6L9UwsTER5u79qacPw&s=10">
+        
+     </section>
+     </div>
+     <div class="detail">
+        <h1> detail </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus voluptatibus officia consectetur id quod sit quisquam </p>
+     </div>
+     
 </body>
 </html>
