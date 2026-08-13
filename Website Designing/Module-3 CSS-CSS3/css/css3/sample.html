@@ -51,7 +51,7 @@
         background-color: #0e231c;
         color: white;
         border:soild 0px black;
-        margin-left: -5%;
+        margin-left: 1%;
 
     }
     button:active
@@ -121,6 +121,7 @@
     }
     section img:hover
     {
+        transform: rotate3d(0, 1, 0.5, 3.142rad);
         border-radius: 50px;
         transition: 2s;
     }
@@ -138,9 +139,37 @@
         border: 1;
         border-radius: 7px;
         animation: 2s backInUp alternate;
+        display: flex;
+        flex-wrap: wrap;
     }
-    
-  
+    span
+    {
+        color: red;
+    }
+    .m {
+    width: 90%;
+    height: 300px;
+    background-color:#0e231c;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 7%;
+}
+
+.content {
+    width: 300px;
+    height: 200px;
+     background-color:rgb(107, 143, 50);
+     border-radius: 10px;
+    padding: 5px;
+    margin: 9px;
+}
+#icon
+{
+    box-shadow: none;
+    margin-left: 30%;
+    transform: none;
+    animation: none;
+}
 </style>
 </head>
 <body>
@@ -159,7 +188,7 @@
    <section>
     
         <h1>
-            grow your business
+            grow<span> your</span> business
         </h1>
     </section>
 
@@ -175,6 +204,15 @@
         <h1> detail </h1>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus voluptatibus officia consectetur id quod sit quisquam </p>
      </div>
+
+     <section class="m">
+     <div class="content">
+        <img id="icon" src="https://cdn-icons-png.flaticon.com/128/7011/7011353.png"> </div>
+     <div class="content"> </div>
+     <div class="content"> </div>
+     <div class="content"> </div>
+
+     </section>
      
 </body>
 </html>
