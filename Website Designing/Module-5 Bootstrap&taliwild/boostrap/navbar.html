@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="nav navbar navbar-expand-md p-1 bg-dark text-white">
+        <!--logo-->
+        <a href="" class="navbar-brand text-white fs-1 ms-5">flipkart </a>
+
+        <!--nav bar-->
+
+        <button type="button" class="btn btn-sm bg-white text-black fs-5 navbar-toggle" data-bs-toggle="collapse" data-bs-target="#btncoll">
+            <sapn class="bi bi-grid"></sapn>
+        </button>
+        <div class="collapse navbar-collaspe" id="btncoll">
+        <ul class="navbar-link">
+         <li> <a href="#"> Home</li>
+         <li> <a href="#">About</li>
+         <li> <a href="#">Service</li>
+         <li> <a href="#"> feedback</li> 
+         <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">account   
+        <span class="badge bagde-sm bg-success text-white rounded-pill">0</span></a>
+
+        <ul class="dropdown-menu bg-dark">
+        <li><a href="#">register</a></li>
+        <li><a href="#">login</a></li>
+        </ul>
+    
+    
+         <li> <a href="#"> cart </li> <span class="bi bi-cart3"></span>
+            <span class="badge bagde-sm bg-danger text-white rounded-pill">0</span>
+        </ul></div>
+    </nav>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvUcw0JJ5NGjvy9iI3XApdWsTywN1bNdnoR8BBlgPrLQ&s=10" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvk_CWgXIBlSEISMJmysRKdqtnSwGykuNKLKdua5Pl8A&s=10" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsRFslLoqJi0Nc0fPdyF3cZvzXBWK9urJ8_pw_WArvlA&s=10" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+</body>
+</html>
