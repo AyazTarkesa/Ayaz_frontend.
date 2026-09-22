@@ -111,6 +111,10 @@ h1
 {
     color: white;
 }
+span
+{
+    color:red;
+}
 p
 {
     margin: 0;
@@ -156,14 +160,29 @@ img
 
     <div class="main">
     <div class="app">
-        <h1>website <br>devlopment</h1>
+        <h1><span>website</span> <br>devlopment</h1>
         <p>join and grow your career</p>
-        <button type="button" class="btn">Sign up</button>
+        <button id="openModal" >Sign up</button>
     </div>
     <div class="img">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOcnmc5NRag1Ng8hyFRpiuuy2D7ssDKyZ905jO1owgg&s=10">
     </div>
     </div>
+
+    <dialog id="MyModal">
+            <h1> Login</h1>
+            <p> hello </p>
+        
+    </dialog>
+    <script>
+        const modal = document.getElementById("MyModal");
+        const openModal = document.getElementById("openModal")
+
+        openModal .addEventListener('click',() => {
+            modal.showModal();
+
+        });
+    </script>
 </body>
 
 </html>
