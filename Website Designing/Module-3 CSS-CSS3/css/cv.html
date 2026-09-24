@@ -123,7 +123,7 @@ p
     font-size: 20px;
     
 }
-.btn
+#openModal
 {
     width: 20%;
     height: 50px;
@@ -139,6 +139,109 @@ img
 {
     margin-top: 50%;
     border-radius: 1300px;
+}
+#MyModal
+{
+    width: 30%;
+    height: 410px;
+    margin-top: 8%;
+    background: linear-gradient(to right, red, black);  
+    box-shadow: -1px 6px 7px ; 
+    color: black;
+    border:  none;
+    padding: 0;
+        overflow: hidden;
+
+    border-radius: 10px;
+     opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+@starting-style {
+    #MyModal:modal {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+#MyModal h1 
+{
+    color:white;
+    margin: 0;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+.form
+{
+    width: 70%;
+    height: 300px;
+
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 20%;
+    padding:0;
+}
+.info
+{
+    width: 500px;
+    height: 100px;
+    padding: 12px;
+    margin-top: 20%;
+    margin-left: -20%;
+}
+#name
+{
+    width: 220px;
+    margin: 10px;
+    padding: 12px;
+    outline:none;
+    margin-left: 8%;
+    border: none;
+    border-radius: 8px;
+
+}
+#password
+{
+    width: 220px;
+    margin: 12px;
+    margin-left:2%;
+    padding: 12px;
+        outline: none;
+
+     border: none;
+    border-radius: 8px;
+}
+
+#fname
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#pass
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sbtn
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.fbtn
+{
+    width: 120px;
+    height: 40px;
+    background-color: #f71616;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+::placeholder
+{
+    font-weight: bold;
 }
 
         
@@ -170,9 +273,23 @@ img
     </div>
 
     <dialog id="MyModal">
+        <form>
             <h1> Login</h1>
-            <p> hello </p>
-        
+            <div class="form">
+                <div class="info">
+                    <label for="name" id="fname">Name</label>
+                        <input type="text" id="name" placeholder="*Enter your name" required><br>
+                        <label for="password" id="pass">password</label>
+                        <input type="password" id="password" placeholder="*Enter your password" required><br>
+
+                            
+                </div>
+
+            <div class="sbtn">
+                <input type="submit" class="fbtn" value="Submit">
+            </div>
+            </div>
+        </form>
     </dialog>
     <script>
         const modal = document.getElementById("MyModal");
