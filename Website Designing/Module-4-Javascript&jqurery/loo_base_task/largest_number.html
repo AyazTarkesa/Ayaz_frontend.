@@ -1,0 +1,16 @@
+<script>
+    num=58239;
+    lag=0;
+    digit=0;
+    while(num>0)
+{
+  let digit=num%10;
+
+    if(digit<lag)
+{
+    lag=digit;
+}
+num=Math.floor(num/10);
+}
+console.log(lag);
+</script>
