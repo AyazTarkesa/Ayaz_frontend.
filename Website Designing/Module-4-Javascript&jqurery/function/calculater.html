@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Calculator</title>
+<script src="cacluate_js.js"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8edf5;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background: #202938;
+    border-radius: 20px;
+    box-shadow: 12px 19px 30px black;
+}
+
+#display {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 18px;
+    padding: 15px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 28px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: #374151;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.operator {
+    background: #f59e0b;
+}
+
+.clear {
+    background: #ef4444;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+    <input id="display" type="text"
+           placeholder="0" readonly>
+
+    <div class="buttons">
+        <button class="clear" onclick="clearinput()" >C</button>
+        <button class="clear" onclick="clearinput()" >AC</button>
+
+        <button>±</button>
+        <button>%</button>
+        <button class="operator" value="/" onclick="inputNumber()">÷</button>
+
+        <button value="7" onclick="return inputNumber(this.value)">7</button>
+        <button value="8" onclick="return inputNumber(this.value)">8</button>
+        <button value="9" onclick="return inputNumber(this.value)">9</button>
+        <button class="operator" value="*" onclick="return inputNumber(this.value)" >×</button>
+
+        <button value="4" onclick="return inputNumber()" >4</button>
+        <button value="5" onclick="return inputNumber()">5</button>
+        <button value="6" onclick="return inputNumber()">6</button>
+        <button class="operator" value="-" onclick="return inputNumber()">−</button>
+
+        <button value="1" onclick="return inputNumber()">1</button>
+        <button  value="2" onclick="return inputNumber()">2</button>
+        <button  value="3" onclick="return inputNumber()">3</button>
+        <button class="operator" onclick="return inputNumber()">+</button>
+
+        <button>00</button>
+        <button  value="0" onclick="return inputNumber()">0</button>
+        <button>.</button>
+        <button class="operator" value="=" onclick="result()">=</button>
+    </div>
+</div>
+
+</body>
+</html>
