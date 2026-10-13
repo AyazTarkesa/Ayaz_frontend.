@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+<script>
+$(document).ready(function(){
+    $(".content").css({"width":"50%","height":"100px","margin":"auto","padding":"12px"});
+
+
+    $("#btn1").click(function(){
+        $("#par").slideUp(6000);
+    });
+
+     $("#btn2").click(function(){
+        $("#par").slideDown(6000);
+    });
+
+     $("#btn3").click(function(){
+        $("#par").slideToggle(6000);
+    });
+
+    
+
+})
+</script>
+</head>
+<body>
+    <div class="content">
+        <button type="button" id="btn1">hide</button>
+        <button type="button" id="btn2">show</button>
+        <button type="button" id="btn3">Toggle</button>
+        <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate at reprehenderit minus magnam! Culpa ullam soluta fuga nisi neque, dicta natus dolores beatae consequuntur aperiam necessitatibus, facere voluptatum fugit?</p>
+
+    </div>
+    
+</body>
+</html>
