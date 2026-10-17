@@ -1,0 +1,25 @@
+<script>
+
+    var arr =[
+              ["Name","age","roll","Dp"],
+              ["Ayaz",19,1,"B.farm"],
+              ["Ammar",18,2,"B.com"],
+              ["siraj",20,3,"BCA"]  
+
+             ];
+
+             document.write(arr.length);
+             document.write("<table border='1px' cellspacing='0'>");
+
+             for(var a=0;a<=3;a++)
+             {
+                document.write("<tr>")
+                for(var b=0;b<=3;b++)
+                {   
+                    document.write("<td>"+arr[a][b]+"</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+   
+</script>
