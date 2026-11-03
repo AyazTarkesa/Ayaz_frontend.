@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 30%;
+            height: 350px;
+            margin: auto;
+            margin-top: 10%;
+            background-color: blue;
+            border: none;
+            border-radius: 14px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 80%;
+            height: 190px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20%;
+            color: white;
+        }
+
+        .head {
+            width: 100%;
+            height: 20px;
+            margin: 0;
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        .head h2 {
+            width: 100%;
+            height: auto;
+            color: white;
+        }
+
+        .display {
+            width: 100%;
+            height: 20px;
+            margin-top: 12%;
+            text-align: center;
+        }
+
+        .display input {
+            width: 60%;
+            height: 30px;
+            margin: 5px 4px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            background: #e0e5ec;
+
+
+        }
+
+        .display,
+        label {
+            width: 300px;
+            height: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            width: 100%;
+            height: 50px;
+            margin-top: 60%;
+        }
+
+        .dp {
+            width: 30%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: red;
+        }
+
+        .wd {
+            width: 30%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="card">
+        <div class="main">
+            <div class="head">
+                <h2> ATM </h2>
+            </div>
+            <p> blc = <span id="blc">1000</span></p>
+            <p id="inv"> Enter info</p>
+
+            <div class="display">
+
+                <label>Name</label>
+                <input type="text" id="name"><br>
+
+                <label> Number</label>
+                <input type="number" id="num">
+
+                <label> Passsword</label>
+                <input type="password" id="pass">
+
+                <button type="button" id="sbtn"> Submit</button><br>
+                
+                <input type="number" id="dis">
+
+            </div>
+            <br>
+            <div class="btn">
+                <button type="button" id="dp">Deposite</button>
+                <button type="button" id="wd">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let dpbtn = document.getElementById("dp");
+        let wdbtn = document.getElementById("wd");
+
+          var pw=1269;
+          var nb=6355462072;
+
+        dpbtn.addEventListener("click", () => {
+            let bl = document.getElementById("blc");
+            let dis = document.getElementById("dis");
+            console.log(bl);
+            console.log(dis.value)
+            blc.innerText = parseInt(blc.innerText) + parseInt(dis.value);
+        });
+
+        wdbtn.addEventListener("click", () => {
+            let bl = document.getElementById("blc");
+            let dis = document.getElementById("dis");
+            console.log(bl);
+            console.log(dis.value)
+            blc.innerText = parseInt(blc.innerText) - parseInt(dis.value);
+        });
+
+        sbtn.addEventListener("click",()=> {
+
+            let nm = document.getElementById("name");
+            let ps = document.getElementById("pass").value;
+            let nu= document.getElementById("num").value;
+            let inv = document.getElementById("inv");
+          ;
+
+            if(ps==pw && nu==nb)
+        {
+            console.log("Ayaz")
+        }
+        else
+        {
+          inv.innerText="Invalid Credential"
+        }
+           
+        })
+    </script>
+
+</body>
+
+</html>
