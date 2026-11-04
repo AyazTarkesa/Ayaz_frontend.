@@ -1,130 +1,261 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card {
-            width: 30%;
-            height: 350px;
-            margin: auto;
-            margin-top: 10%;
-            background-color: blue;
-            border: none;
-            border-radius: 14px;
-            justify-content: center;
-            align-items: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATM Banking System</title>
 
-        .main {
-            width: 80%;
-            height: 190px;
-            text-align: center;
-            margin: auto;
-            margin-top: 20%;
-            color: white;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        .head {
-            width: 100%;
-            height: 20px;
-            margin: 0;
-            margin-top: 2%;
-            text-align: center;
-        }
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #071b45, #124e96, #2684c7);
+    padding: 20px;
+}
 
-        .head h2 {
-            width: 100%;
-            height: auto;
-            color: white;
-        }
+.card {
+    width: 100%;
+    max-width: 430px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    color: white;
+}
 
-        .display {
-            width: 100%;
-            height: 20px;
-            margin-top: 12%;
-            text-align: center;
-        }
+.head {
+    text-align: center;
+    margin-bottom: 25px;
+}
 
-        .display input {
-            width: 60%;
-            height: 30px;
-            margin: 5px 4px;
-            font-size: 20px;
-            border: none;
-            border-radius: 12px;
-            background: #e0e5ec;
+.logo {
+    width: 65px;
+    height: 65px;
+    background: white;
+    color: #1262ad;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: auto auto 12px;
+}
 
+.head h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
 
-        }
+.head p {
+    color: #c9ddf5;
+    font-size: 13px;
+    margin-top: 5px;
+}
 
-        .display,
-        label {
-            width: 300px;
-            height: 10px;
-            text-align: center;
-        }
+.balance {
+    background: linear-gradient(120deg, #1767c5, #398ee9);
+    padding: 22px;
+    border-radius: 17px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
-        .btn {
-            width: 100%;
-            height: 50px;
-            margin-top: 60%;
-        }
+.balance p {
+    color: #d5e8ff;
+    font-size: 14px;
+}
 
-        .dp {
-            width: 30%;
-            height: 30px;
-            border: none;
-            border-radius: 5px;
-            background-color: red;
-        }
+.balance h1 {
+    font-size: 32px;
+    margin-top: 8px;
+}
 
-        .wd {
-            width: 30%;
-            height: 30px;
-            border: none;
-            border-radius: 5px;
-            background-color: yellow;
-        }
-    </style>
+.section-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 7px;
+    color: #e0edff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.95);
+    color: #17345a;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #62b7ff;
+    box-shadow: 0 0 0 3px rgba(98,183,255,0.2);
+}
+
+#sbtn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1259a3;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 22px;
+}
+
+#sbtn:hover {
+    background: #dceeff;
+    transform: translateY(-2px);
+}
+
+.amount input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 13px 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#dp {
+    background: #16c784;
+    color: white;
+}
+
+#wd {
+    background: #ff626b;
+    color: white;
+}
+
+.buttons button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+}
+
+#inv {
+    text-align: center;
+    font-size: 13px;
+    color: #dcecff;
+    min-height: 20px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 11px;
+    color: #c2d8f3;
+    margin-top: 25px;
+}
+
+@media(max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    .balance h1 {
+        font-size: 27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
+<div class="card">
 
-    <div class="card">
-        <div class="main">
-            <div class="head">
-                <h2> ATM </h2>
-            </div>
-            <p> blc = <span id="blc">1000</span></p>
-            <p id="inv"> Enter info</p>
-
-            <div class="display">
-
-                <label>Name</label>
-                <input type="text" id="name"><br>
-
-                <label> Number</label>
-                <input type="number" id="num">
-
-                <label> Passsword</label>
-                <input type="password" id="pass">
-
-                <button type="button" id="sbtn"> Submit</button><br>
-                
-                <input type="number" id="dis">
-
-            </div>
-            <br>
-            <div class="btn">
-                <button type="button" id="dp">Deposite</button>
-                <button type="button" id="wd">Withdraw</button>
-            </div>
-        </div>
+    <div class="head">
+        <div class="logo">🏦</div>
+        <h2>ATM BANK</h2>
+        <p>Welcome to Digital Banking</p>
     </div>
+
+    <div class="balance">
+        <p>Available Balance</p>
+        <h1>₹ <span id="blc">1000</span></h1>
+    </div>
+
+    <h3 class="section-title">Account Details</h3>
+
+    <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <div class="input-group">
+        <label>Account Number</label>
+        <input type="number" id="num" placeholder="Enter account number">
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="pass" placeholder="Enter password">
+    </div>
+
+    <button type="button" id="sbtn">Verify Account →</button>
+
+    <p id="inv">Please enter your account details</p>
+
+    <div class="input-group amount">
+        <label>Enter Amount (₹)</label>
+        <input type="number" id="dis" placeholder="₹ Enter amount" disabled>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="dp">＋ Deposit</button>
+        <button type="button" id="wd">－ Withdraw</button>
+    </div>
+
+    <div class="footer">
+        Secure Digital Banking System © 2026
+    </div>
+
+</div>
+
+
+
     <script>
         let dpbtn = document.getElementById("dp");
         let wdbtn = document.getElementById("wd");
@@ -143,9 +274,15 @@
         wdbtn.addEventListener("click", () => {
             let bl = document.getElementById("blc");
             let dis = document.getElementById("dis");
-            console.log(bl);
-            console.log(dis.value)
-            blc.innerText = parseInt(blc.innerText) - parseInt(dis.value);
+          
+            blc.innerText = parseInt(blc.innerText) -  parseInt(dis.value);
+
+            if(parseInt(blc.innerText)<0)        {
+            console.log(blc.innerText=parseInt(blc.innerText)-(parseInt(dis.value)*0.068))
+        }
+
+
+
         });
 
         sbtn.addEventListener("click",()=> {
@@ -158,11 +295,14 @@
 
             if(ps==pw && nu==nb)
         {
-            console.log("Ayaz")
+            inv.innerText="welcome back"  
+            dis.disabled=false;
         }
         else
         {
           inv.innerText="Invalid Credential"
+          dis.disabled=true;
+
         }
            
         })
